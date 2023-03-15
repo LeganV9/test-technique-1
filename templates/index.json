@@ -6,26 +6,26 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "DESTOCKAGE HIVER",
             "heading_size": "h0"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Netus et malesuada fames ac.",
             "text_style": "body"
           }
         },
         "button": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop all",
+            "button_label_1": "DÉCOUVRIR",
             "button_link_1": "shopify:\/\/collections\/all",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
-            "button_style_secondary_2": false
+            "button_style_secondary_2": true
           }
         }
       },
@@ -35,9 +35,10 @@
         "button"
       ],
       "settings": {
-        "image_overlay_opacity": 40,
+        "image": "shopify:\/\/shop_images\/banner_33578353-c628-45dd-bfa7-01d48a6ef879.png",
+        "image_overlay_opacity": 0,
         "image_height": "large",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "middle-right",
         "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
@@ -50,15 +51,15 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured products",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
-        "products_to_show": 8,
-        "columns_desktop": 4,
+        "products_to_show": 6,
+        "columns_desktop": 3,
         "full_width": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
         "color_scheme": "background-1",
@@ -72,10 +73,73 @@
         "padding_top": 28,
         "padding_bottom": 36
       }
+    },
+    "99d3a0a7-655d-4d11-9f0b-cabc76742632": {
+      "type": "featured-product",
+      "blocks": {
+        "template--18339983982892__99d3a0a7-655d-4d11-9f0b-cabc76742632-1678874525ab231f6d-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "template--18339983982892__99d3a0a7-655d-4d11-9f0b-cabc76742632-1678874525ab231f6d-1": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "template--18339983982892__99d3a0a7-655d-4d11-9f0b-cabc76742632-1678874525ab231f6d-2": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--18339983982892__99d3a0a7-655d-4d11-9f0b-cabc76742632-1678874525ab231f6d-3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "template--18339983982892__99d3a0a7-655d-4d11-9f0b-cabc76742632-1678874525ab231f6d-4": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "template--18339983982892__99d3a0a7-655d-4d11-9f0b-cabc76742632-1678874525ab231f6d-5": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        }
+      },
+      "block_order": [
+        "template--18339983982892__99d3a0a7-655d-4d11-9f0b-cabc76742632-1678874525ab231f6d-0",
+        "template--18339983982892__99d3a0a7-655d-4d11-9f0b-cabc76742632-1678874525ab231f6d-1",
+        "template--18339983982892__99d3a0a7-655d-4d11-9f0b-cabc76742632-1678874525ab231f6d-2",
+        "template--18339983982892__99d3a0a7-655d-4d11-9f0b-cabc76742632-1678874525ab231f6d-3",
+        "template--18339983982892__99d3a0a7-655d-4d11-9f0b-cabc76742632-1678874525ab231f6d-4",
+        "template--18339983982892__99d3a0a7-655d-4d11-9f0b-cabc76742632-1678874525ab231f6d-5"
+      ],
+      "settings": {
+        "product": "the-collection-snowboard-oxygen",
+        "color_scheme": "background-1",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
-    "featured_collection"
+    "featured_collection",
+    "99d3a0a7-655d-4d11-9f0b-cabc76742632"
   ]
 }

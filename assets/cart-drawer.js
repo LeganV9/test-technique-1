@@ -29,6 +29,8 @@ class CartDrawer extends HTMLElement {
     if (cartDrawerNote && !cartDrawerNote.hasAttribute('role')) this.setSummaryAccessibility(cartDrawerNote);
     // here the animation doesn't seem to always get triggered. A timeout seem to help
     setTimeout(() => {this.classList.add('animate', 'active')});
+    // below is the fix for the event timing problem found at line 77
+    this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
 
     this.addEventListener('transitionend', () => {
       const containerToTrapFocusOn = this.classList.contains('is-empty') ? this.querySelector('.drawer__inner-empty') : document.getElementById('CartDrawer');
@@ -70,7 +72,8 @@ class CartDrawer extends HTMLElement {
     }));
 
     setTimeout(() => {
-      this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
+      // before fixing event timing problem : see code below (line 76) that was moved to line 33
+      // this.querySelector('#CartDrawer-Overlay').addEventListener('click', this.close.bind(this));
       this.open();
     });
   }
@@ -124,3 +127,4 @@ class CartDrawerItems extends CartItems {
 }
 
 customElements.define('cart-drawer-items', CartDrawerItems);
+
